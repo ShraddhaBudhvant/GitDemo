@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [LoanDeparment]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="PersonalLoan(failed)">
+    <parameter name="url" value="google.com"/>
+    <groups>
+      <run>
+        <exclude name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.Day1">
+        <methods>
+          <include name="demo"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+    </classes>
+  </test> <!-- PersonalLoan(failed) -->
+</suite> <!-- Failed suite [LoanDeparment] -->
